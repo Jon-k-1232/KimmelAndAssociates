@@ -4,7 +4,7 @@ import Header from "../components/header/header.js"
 
 const Connect = () => {
   return (
-    <div>
+    <div className="connectPage">
       <Header />
       <div className="connectWrapper">
         <div className="upperConnect">

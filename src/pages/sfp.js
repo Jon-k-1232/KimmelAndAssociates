@@ -4,7 +4,7 @@ import Header from "../components/header/header.js"
 
 const Sfp = () => {
   return (
-    <div>
+    <div className="sfpPage">
       <Header />
       <div className="loginWrapper">
         <div className="loginTop">

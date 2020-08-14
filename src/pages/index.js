@@ -2,10 +2,13 @@ import React from "react"
 import "./index.css"
 import Footer from "../components/footer/footer.js"
 import Header from "../components/header/header.js"
+import mainHome from "../images/mainHome.jpg"
+import table from "../images/table.jpg"
+import Pier from "../images/Pier.jpg"
 
 export default function Home() {
   return (
-    <div>
+    <div className="main">
       <div className="keywordSearch">
         <p>
           James F. Kimmel & Associates, Experienced and Trusted Accounting
@@ -76,10 +79,14 @@ export default function Home() {
         </p>
       </div>
       <Header />
-      <div className="homeWrapper">
+      <div className="homePage">
         <div className="mainTop">
-          {/*<img src="Images/mainHome.jpg" alt="Every Cent Counts." className="mainHomeImage">*/}
-          <h1>Every Cent Counts.</h1>
+          <img
+            src={mainHome}
+            alt="Every Cent Counts."
+            className="mainHomeImage"
+          />
+          <h1 id="mainHomeTopText">Every Cent Counts.</h1>
         </div>
         <div className="mainBottom">
           <main className="contentContainer">
@@ -92,7 +99,11 @@ export default function Home() {
 
             <section className="middleBoxHome">
               <section className="partnerSection">
-                {/*<img src="Images/table.jpg" alt="Planning outcomes together." className="partnerImageMain">*/}
+                <img
+                  src={table}
+                  alt="Planning outcomes together."
+                  className="partnerImageMain"
+                />
                 <div className="partnerText">
                   <h3 id="partnerHeader">Partnering with You</h3>
                   <h4 id="partnerDetails">
@@ -106,7 +117,11 @@ export default function Home() {
 
             <section className="endBoxHome">
               <section className="visionSection">
-                {/*<img src="Images/Pier.jpg" alt="Clear Vision" className="visionImageMain">*/}
+                <img
+                  src={Pier}
+                  alt="Clear Vision"
+                  className="visionImageMain"
+                />
                 <div className="visionText">
                   <h3 id="visionHeader">Guidance & Vision</h3>
                   <h4 id="visionDetails">

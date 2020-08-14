@@ -5,7 +5,7 @@ import Header from "../components/header/header.js"
 
 const Culture = () => {
   return (
-    <div>
+    <div className='culturePage'>
       <Header />
       <div>
         <h1>
@@ -24,7 +24,6 @@ const Culture = () => {
           communication, and customized personal service.
         </p>
       </div>
-
       <Footer />
     </div>
   )

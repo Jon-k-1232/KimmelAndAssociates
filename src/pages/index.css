@@ -1,3 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
 .keywordSearch {
   display: none;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  background-color: #ffffff;
+  font-family: Abel;
+}
+
+/****************\\\\\\\\\ Navbar Page /////////****************/
+
+.hamburger {
+  position: absolute;
+  right: 10px;
+  top: -20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 2px;
+  background-color: #00aded;
+  margin: 8px 0;
+  transition: 0.6s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-7px, -7px);
+}
+
+/****************\\\\\\\\\ Home Page /////////****************/
+
+.homePage {
+  min-height: 83vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mainTop {
+  height: 100vh;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainHomeImage {
+  display: flex;
+  object-fit: cover;
+  overflow: hidden;
+  height: 102vh;
+  width: 100%;
+  filter: brightness(55%);
+}
+
+#mainHomeTopText {
+  position: absolute;
+  font-size: 3em;
+  margin: 0 1em;
+  text-align: center;
+  color: #fff;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  color: #5c5c5c;
+}
+
+.mainQoute {
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+
+.mainQoute h2 {
+  font-size: 49px;
+  width: 5em;
+  margin: 1em auto 0 auto;
+  font-weight: 600;
+  content: open-quote;
+}
+
+.mainQoute p {
+  font-size: 28px;
+  width: 6em;
+  margin: auto;
+  line-height: 45px;
+}
+
+blockquote ::before {
+  content: open-quote;
+  text-align: center;
+  display: block;
+  font-size: 1.5em;
+  line-height: 1em;
+  vertical-align: bottom;
+  height: 0.5em;
+  color: rgba(36, 36, 36, 0.4);
+}
+
+p::before {
+  content: no-open-quote;
+}
+
+.partnerImageMain {
+  width: 300px;
+  display: block;
+}
+
+.visionImageMain {
+  width: 300px;
+  display: block;
+}
+
+#partnerHeader,
+#visionHeader {
+  font-weight: 700;
+  color: #242424;
+  font-size: 26px;
+  text-align: center;
+}
+
+#partnerDetails,
+#visionDetails {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+#visionDetails {
+  text-align: right;
+}
+
+/****************\\\\\\\\\ About Page /////////****************/
+
+.aboutPage {
+  min-height: 83vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/****************\\\\\\\\\ Culture Page /////////****************/
+
+.culturePage {
+  min-height: 83vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/****************\\\\\\\\\ Connect Page /////////****************/
+
+.connectPage {
+  min-height: 83vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/****************\\\\\\\\\ SFP Page /////////****************/
+
+.sfpPage {
+  min-height: 83vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

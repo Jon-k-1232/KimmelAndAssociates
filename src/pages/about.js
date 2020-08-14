@@ -5,7 +5,7 @@ import Header from "../components/header/header.js"
 
 const About = () => {
   return (
-    <div>
+    <div className="aboutPage">
       <Header />
       <div className="aboutWrapper">
         <div id="upperAbout">
