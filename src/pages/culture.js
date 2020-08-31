@@ -2,16 +2,26 @@ import React from "react"
 import MidNav from "../components/midNav/midNav.js"
 import Footer from "../components/footer/footer.js"
 import Header from "../components/header/header.js"
+import canyon from "../images/canyon.jpg"
+import downCarrot from "../images/downCarrot.png"
 
 const Culture = () => {
   return (
-    <div className='culturePage'>
+    <div className="culturePage">
       <Header />
       <div>
+        <img
+          src={canyon}
+          alt="Looking up from narrow canyon."
+          className="aboutCanyonImage"
+        />
         <h1>
           We serve as your financial compass helping customize a plan to fit
           your goals
         </h1>
+        <div className="downArrow bounce">
+          <img src={downCarrot} alt="Down Carrot" />
+        </div>
       </div>
       <MidNav />
       <div>

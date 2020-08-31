@@ -11,44 +11,80 @@ body {
   font-family: Abel;
 }
 
-/****************\\\\\\\\\ Navbar Page /////////****************/
-
-.hamburger {
+/****************\\\\\\\\\ Down Carrot /////////****************/
+.downArrow {
   position: absolute;
-  right: 10px;
-  top: -20px;
-  cursor: pointer;
-  margin-right: 10px;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.bounce {
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+}
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
 }
 
-.bar1,
-.bar2,
-.bar3 {
-  width: 35px;
-  height: 2px;
-  background-color: #00aded;
-  margin: 8px 0;
-  transition: 0.6s;
-}
-
-/* Rotate first bar */
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-/* Fade out the second bar */
-.change .bar2 {
-  opacity: 0;
-}
-
-/* Rotate last bar */
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-7px, -7px);
-}
-
-/****************\\\\\\\\\ Home Page /////////****************/
+/****************\\\\\\\\\ Home Mobile /////////****************/
 
 .homePage {
   min-height: 83vh;
@@ -151,7 +187,7 @@ p::before {
   text-align: right;
 }
 
-/****************\\\\\\\\\ About Page /////////****************/
+/****************\\\\\\\\\ About Page Mobile /////////****************/
 
 .aboutPage {
   min-height: 83vh;
@@ -160,7 +196,86 @@ p::before {
   justify-content: center;
 }
 
-/****************\\\\\\\\\ Culture Page /////////****************/
+.lowerAbout {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutStarsImage,
+.aboutCanyonImage {
+  object-fit: cover;
+  overflow: hidden;
+  height: 102vh;
+  width: 100%;
+}
+
+.topWordsAbout {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.crowImage,
+.employeeOneImage,
+.employeeTwoImage,
+.employeeThreeImage,
+.employeeFourImage,
+.employeeFiveImage,
+.employeeSixImage {
+  width: 300px;
+}
+
+.teamMembers div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5em 0px 2.5em 0px;
+}
+
+.teamMembers div h3 {
+  margin: 11px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.teamMembers div p {
+  font-weight: 600;
+  color: #cda577;
+  font-size: 13px;
+  margin: 0;
+}
+
+.subNavAbout {
+  margin: 2.5em 0px 2.5em 0;
+  display: flex;
+  justify-content: center;
+  margin-right: 1em;
+  font-size: 1.5em;
+}
+
+hr {
+  width: 2em;
+  color: #cda577;
+}
+
+#aboutSub,
+#cultureSub {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#aboutSub a,
+#cultureSub a {
+  text-decoration: none;
+  color: #cda577;
+}
+
+/****************\\\\\\\\\ Culture Page Mobile /////////****************/
 
 .culturePage {
   min-height: 83vh;
@@ -169,7 +284,36 @@ p::before {
   justify-content: center;
 }
 
-/****************\\\\\\\\\ Connect Page /////////****************/
+#cultureStatement {
+  margin: 4em 2em 5em 2em;
+  font-size: 15px;
+  line-height: 2em;
+  text-align: center;
+  color: #5c5c5c;
+}
+
+#beni {
+  font-size: 29px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 2em;
+  color: #5c5c5c;
+}
+
+#strive {
+  text-align: justify;
+  margin: 0px 10px 2em 10px;
+  font-weight: 100;
+}
+
+#promises {
+  color: #5c5c5c;
+  margin: 2em 1em 3em 1em;
+  font-size: 22px;
+  text-align: center;
+}
+
+/****************\\\\\\\\\ Connect Page Mobile /////////****************/
 
 .connectPage {
   min-height: 83vh;
@@ -178,7 +322,39 @@ p::before {
   justify-content: center;
 }
 
-/****************\\\\\\\\\ SFP Page /////////****************/
+.connectTopImage,
+.loginImage {
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+.upperText {
+  position: absolute;
+  text-align: center;
+  color: #2a60a7;
+}
+
+#connectPhrase {
+  margin: 3em 2em 3em 2em;
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: #5c5c5c;
+}
+
+.connectAddress {
+  margin: 1em 2em 3em 2em;
+  letter-spacing: 2px;
+}
+
+.loginTop h1 {
+  position: absolute;
+  text-align: center;
+  color: #f9f9f9;
+}
+
+/****************\\\\\\\\\ SFP Page Mobile /////////****************/
 
 .sfpPage {
   min-height: 83vh;
@@ -186,3 +362,32 @@ p::before {
   flex-direction: column;
   justify-content: center;
 }
+
+.loginBottom {
+  text-align: center;
+  margin: 7em 1em 7em 1em;
+}
+
+#logIn {
+  background: #cda577;
+  border-radius: 23px;
+  box-shadow: -1px 4px 11px #5c5c5c;
+  color: white;
+  font-family: "Abel", Helvetica, sans-serif;
+  font-size: 18px;
+  height: 2.5em;
+  width: 7em;
+  border: none;
+}
+
+/****************\\\\\\\\\ Home Page Tablet /////////****************/
+/****************\\\\\\\\\ About Page Tablet /////////****************/
+/****************\\\\\\\\\ Culture Page Tablet /////////****************/
+/****************\\\\\\\\\ Connect Page Tablet /////////****************/
+/****************\\\\\\\\\ SFP Page Tablet /////////****************/
+
+/****************\\\\\\\\\ Home Page Large /////////****************/
+/****************\\\\\\\\\ About Page Large /////////****************/
+/****************\\\\\\\\\ Culture Page Large /////////****************/
+/****************\\\\\\\\\ Connect Page Large /////////****************/
+/****************\\\\\\\\\ SFP Page Large /////////****************/

@@ -5,6 +5,7 @@ import Header from "../components/header/header.js"
 import mainHome from "../images/mainHome.jpg"
 import table from "../images/table.jpg"
 import Pier from "../images/Pier.jpg"
+import downCarrot from "../images/downCarrot.png"
 
 export default function Home() {
   return (
@@ -87,6 +88,9 @@ export default function Home() {
             className="mainHomeImage"
           />
           <h1 id="mainHomeTopText">Every Cent Counts.</h1>
+          <div className="downArrow bounce">
+            <img src={downCarrot} alt="Down Carrot" />
+          </div>
         </div>
         <div className="mainBottom">
           <main className="contentContainer">

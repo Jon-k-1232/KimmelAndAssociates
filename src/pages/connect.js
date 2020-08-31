@@ -1,6 +1,8 @@
 import React from "react"
 import Footer from "../components/footer/footer.js"
 import Header from "../components/header/header.js"
+import beachFam from "../images/beachFam.jpg"
+import downCarrot from "../images/downCarrot.png"
 
 const Connect = () => {
   return (
@@ -8,9 +10,17 @@ const Connect = () => {
       <Header />
       <div className="connectWrapper">
         <div className="upperConnect">
+          <img
+            src={beachFam}
+            alt="family in at beach with sunset"
+            className="connectTopImage"
+          />
           <div className="upperText">
             <h4>LEARN HOW WE CAN HELP</h4>
             <h1>Connect With Us</h1>
+          </div>
+          <div className="downArrow bounce">
+            <img src={downCarrot} alt="Down Carrot" />
           </div>
         </div>
 
