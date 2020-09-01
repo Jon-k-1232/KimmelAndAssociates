@@ -1,7 +1,7 @@
 import React from "react"
 import "./footer.css"
 
-const Footer = () => {
+export default function Footer() {
   return (
     <footer className="constantFooter">
       <h4>Phoenix, Az 85032</h4>
@@ -14,5 +14,3 @@ const Footer = () => {
     </footer>
   )
 }
-
-export default Footer

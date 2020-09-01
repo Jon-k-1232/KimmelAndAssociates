@@ -19,12 +19,47 @@ header {
   color: #ffffff;
 }
 
+.menuItems {
+  list-style-type: none;
+  display: none;
+  justify-content: space-evenly;
+}
+
+.menuItems a {
+  text-decoration: none;
+  font-size: 35px;
+  color: #00aded;
+}
+
+.menuItems a:hover {
+  color: #00adedb8;
+}
+
+.menuItems li {
+  margin: 10px 0;
+}
+
+.menuItems.open {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background: #141e55f2;
+  z-index: 1;
+}
+
 .hamburger {
   position: absolute;
   right: 10px;
-  top: -20px;
+  top: 40px;
   cursor: pointer;
   margin-right: 10px;
+  z-index: 2;
 }
 
 .bar1,
@@ -40,7 +75,7 @@ header {
 /* Rotate first bar */
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-4px, 3px);
 }
 
 /* Fade out the second bar */
