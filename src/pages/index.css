@@ -39,8 +39,6 @@ body {
 
 #mainHomeTopText {
   position: absolute;
-  font-size: 3em;
-  margin: 0 1em;
   text-align: center;
   color: #fff;
 }
@@ -58,7 +56,6 @@ body {
 
 .mainQoute h2 {
   font-size: 49px;
-  width: 5em;
   margin: 1em auto 0 auto;
   font-weight: 600;
   content: open-quote;
@@ -66,7 +63,6 @@ body {
 
 .mainQoute p {
   font-size: 28px;
-  width: 6em;
   margin: auto;
   line-height: 45px;
 }
@@ -86,14 +82,19 @@ p::before {
   content: no-open-quote;
 }
 
+.visionSection,
+.partnerSection {
+  display: flex;
+  flex-direction: column;
+}
+
 .partnerImageMain {
   width: 300px;
-  display: block;
 }
 
 .visionImageMain {
   width: 300px;
-  display: block;
+  float: right;
 }
 
 #partnerHeader,
@@ -114,6 +115,14 @@ p::before {
   text-align: right;
 }
 
+.middleBoxHome {
+  margin-left: 20px;
+}
+
+.endBoxHome {
+  margin-right: 20px;
+}
+
 /****************\\\\\\\\\ About Page Mobile /////////****************/
 
 .aboutPage {
@@ -132,7 +141,7 @@ p::before {
 .aboutCanyonImage {
   object-fit: cover;
   overflow: hidden;
-  height: 102vh;
+  height: 100vh;
   width: 100%;
 }
 
@@ -146,13 +155,7 @@ p::before {
   color: #fff;
 }
 
-.crowImage,
-.employeeOneImage,
-.employeeTwoImage,
-.employeeThreeImage,
-.employeeFourImage,
-.employeeFiveImage,
-.employeeSixImage {
+.teamMembers div img {
   width: 300px;
 }
 
@@ -161,7 +164,7 @@ p::before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2.5em 0px 2.5em 0px;
+  margin: 40px 0px 40px 0px;
 }
 
 .teamMembers div h3 {
@@ -177,33 +180,6 @@ p::before {
   margin: 0;
 }
 
-.subNavAbout {
-  margin: 2.5em 0px 2.5em 0;
-  display: flex;
-  justify-content: center;
-  margin-right: 1em;
-  font-size: 1.5em;
-}
-
-hr {
-  width: 2em;
-  color: #cda577;
-}
-
-#aboutSub,
-#cultureSub {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#aboutSub a,
-#cultureSub a {
-  text-decoration: none;
-  color: #cda577;
-}
-
 /****************\\\\\\\\\ Culture Page Mobile /////////****************/
 
 .culturePage {
@@ -213,31 +189,24 @@ hr {
   justify-content: center;
 }
 
-#cultureStatement {
-  margin: 4em 2em 5em 2em;
-  font-size: 15px;
-  line-height: 2em;
+.lowerText {
+  margin: 44px 22px 66px 22px;
   text-align: center;
-  color: #5c5c5c;
 }
 
 #beni {
   font-size: 29px;
   font-weight: 900;
-  text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 58px;
   color: #5c5c5c;
 }
 
 #strive {
-  text-align: justify;
-  margin: 0px 10px 2em 10px;
   font-weight: 100;
 }
 
 #promises {
   color: #5c5c5c;
-  margin: 2em 1em 3em 1em;
   font-size: 22px;
   text-align: center;
 }
@@ -268,14 +237,15 @@ hr {
 }
 
 #connectPhrase {
-  margin: 3em 2em 3em 2em;
+  text-align: center;
+  margin: 0px 30px 35px 30px;
   font-size: 24px;
   letter-spacing: 2px;
   color: #5c5c5c;
 }
 
 .connectAddress {
-  margin: 1em 2em 3em 2em;
+  margin: 0px 30px 50px 30px;
   letter-spacing: 2px;
 }
 
@@ -290,7 +260,7 @@ hr {
 
 .loginBottom {
   text-align: center;
-  margin: 7em 1em 7em 1em;
+  margin: 112px 16px 112px 16px;
 }
 
 #logIn {
@@ -300,19 +270,79 @@ hr {
   color: white;
   font-family: "Abel", Helvetica, sans-serif;
   font-size: 18px;
-  height: 2.5em;
-  width: 7em;
+  height: 50px;
+  width: 140px;
   border: none;
 }
 
-/****************\\\\\\\\\ Home Page Tablet /////////****************/
-/****************\\\\\\\\\ About Page Tablet /////////****************/
-/****************\\\\\\\\\ Culture Page Tablet /////////****************/
-/****************\\\\\\\\\ Connect Page Tablet /////////****************/
-/****************\\\\\\\\\ SFP Page Tablet /////////****************/
+@media only screen and (min-width: 700px) {
+  /****************\\\\\\\\\ Home Page Tablet /////////****************/
+  .partnerImageMain,
+  .visionImageMain {
+    width: 400px;
+  }
 
-/****************\\\\\\\\\ Home Page Large /////////****************/
-/****************\\\\\\\\\ About Page Large /////////****************/
-/****************\\\\\\\\\ Culture Page Large /////////****************/
-/****************\\\\\\\\\ Connect Page Large /////////****************/
-/****************\\\\\\\\\ SFP Page Large /////////****************/
+  .endBoxHome {
+    align-self: flex-end;
+    margin-right: 20px;
+  }
+
+  .visionSection,
+  .partnerSection {
+    width: 400px;
+  }
+
+  .middleBoxHome {
+    align-self: flex-start;
+    margin-left: 20px;
+  }
+
+  .mainTop h1,
+  .upperAbout h1,
+  .topWordCulture h1,
+  .topWordsConnect h1,
+  .topWordsSfp h1 {
+    font-size: 40px;
+  }
+
+  .topWordsConnect h4 {
+    font-size: 20px;
+  }
+
+  /****************\\\\\\\\\ About Page Tablet /////////****************/
+
+  .teamMembers div img {
+    width: 400px;
+  }
+
+  /****************\\\\\\\\\ Culture Page Tablet /////////****************/
+  .topWordsCulture h1 {
+    margin: 25px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  /****************\\\\\\\\\ Home Page Large /////////****************/
+  .mainQoute {
+    margin: 80px auto 80px auto;
+  }
+
+  .partnerImageMain,
+  .visionImageMain {
+    width: 600px;
+  }
+
+  .visionSection,
+  .partnerSection {
+    width: 600px;
+  }
+
+  #visionDetails {
+    text-align: right;
+  }
+
+  .visionSection {
+    align-self: flex-end;
+    width: 100%;
+  }
+}

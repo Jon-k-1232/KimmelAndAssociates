@@ -9,11 +9,7 @@ export default class Carrot extends React.Component {
 
   render() {
     return (
-      <div
-        className="downArrow bounce"
-        aria-hidden
-        onClick={this.slidder}
-      >
+      <div className="downArrow bounce" aria-hidden onClick={this.slidder}>
         <img src={downCarrot} alt="Down Carrot" />
       </div>
     )

@@ -1,5 +1,4 @@
 import React from "react"
-import MidNav from "../components/midNav/midNav.js"
 import Footer from "../components/footer/footer.js"
 import Header from "../components/header/header.js"
 import Carrot from "../components/carrot/carrot.js"
@@ -33,9 +32,8 @@ export default class About extends React.Component {
             </div>
             <Carrot />
           </div>
-          <MidNav />
           <div className="lowerAbout">
-            <section className="teamMembers">
+            <div className="teamMembers">
               <div className="crow">
                 <img src={dc} alt="Clear Vision" className="visionImageMain" />
                 <h3>James F. Kimmel</h3>
@@ -101,7 +99,7 @@ export default class About extends React.Component {
                 <h3>Marsha Johnson</h3>
                 <p>CPA</p>
               </div>
-            </section>
+            </div>
           </div>
         </div>
         <Footer />

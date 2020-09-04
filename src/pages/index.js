@@ -106,13 +106,15 @@ export default class Home extends React.Component {
                 </p>
               </blockquote>
 
-              <section className="middleBoxHome">
-                <section className="partnerSection">
-                  <img
-                    src={table}
-                    alt="Planning outcomes together."
-                    className="partnerImageMain"
-                  />
+              <div className="middleBoxHome">
+                <div className="partnerSection">
+                  <div className="partnerAlign">
+                    <img
+                      src={table}
+                      alt="Planning outcomes together."
+                      className="partnerImageMain"
+                    />
+                  </div>
                   <div className="partnerText">
                     <h3 id="partnerHeader">Partnering with You</h3>
                     <h4 id="partnerDetails">
@@ -121,16 +123,18 @@ export default class Home extends React.Component {
                       COMMUNICATION, AND SERVICE.
                     </h4>
                   </div>
-                </section>
-              </section>
+                </div>
+              </div>
 
-              <section className="endBoxHome">
-                <section className="visionSection">
-                  <img
-                    src={Pier}
-                    alt="Clear Vision"
-                    className="visionImageMain"
-                  />
+              <div className="endBoxHome">
+                <div className="visionSection">
+                  <div className="visionAlign">
+                    <img
+                      src={Pier}
+                      alt="Clear Vision"
+                      className="visionImageMain"
+                    />
+                  </div>
                   <div className="visionText">
                     <h3 id="visionHeader">Guidance & Vision</h3>
                     <h4 id="visionDetails">
@@ -141,8 +145,8 @@ export default class Home extends React.Component {
                       KNOWLEDGE AND EXPERIENCE.
                     </h4>
                   </div>
-                </section>
-              </section>
+                </div>
+              </div>
             </main>
           </div>
         </div>
