@@ -15,5 +15,5 @@ module.exports = {
       "James F. Kimmel & Associates, Experienced and Trusted Accounting Services Serving Arizona. Personal Taxes, " +
       "Corporate Taxes, Tax Planning, Estate Planning, Book Keeping, QuickBooks, Payroll, Tax Accountant.",
   },
-  pathPrefix: "/KimmelAndAssociates",
+  pathPrefix: "/kimmel_and_associates",
 }

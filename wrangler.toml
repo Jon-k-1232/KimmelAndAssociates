@@ -1,0 +1,12 @@
+name = "kimmel_and_associates"
+type = "webpack"
+account_id = "ae59b613f43d2e9e314834b235848911"
+workers_dev = true
+
+[env.production]
+zone_id = "5f16d729b46cf891a21c786b0acdf49c"
+route ="jimkimmel.com/*"
+
+[site]
+bucket = "./public"
+entry-point = "workers-site"
