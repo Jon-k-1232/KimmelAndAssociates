@@ -5,7 +5,7 @@ workers_dev = true
 
 [env.production]
 zone_id = "5f16d729b46cf891a21c786b0acdf49c"
-route ="jimkimmel.com/*"
+route ="*jimkimmel.com/*"
 
 [site]
 bucket = "./public"
