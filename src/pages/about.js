@@ -5,7 +5,7 @@ import Carrot from "../components/carrot/carrot.js"
 import dc from "../images/dc.jpg"
 import coin from "../images/coin.jpg"
 import cacti from "../images/cacti.jpg"
-import beach from "../images/beach.jpg"
+//import beach from "../images/beach.jpg"
 import disney from "../images/disney.jpg"
 import starWars from "../images/starWars.jpg"
 import swan from "../images/swan.jpg"
@@ -60,15 +60,17 @@ export default class About extends React.Component {
                 <p>RECEPTIONIST</p>
               </div>
 
+              {/*
               <div className="employeeThree">
                 <img
                   src={beach}
                   alt="waves crashing on rocks"
                   className="employeeThreeImage"
                 />
-                <h3>Katrina Will</h3>
-                <p>ADMINISTRATIVE ASSISTANT</p>
+                <h3>Employee Three Name Here</h3>
+                <p>Job Title</p>
               </div>
+              */}
 
               <div className="employeeFour">
                 <img
