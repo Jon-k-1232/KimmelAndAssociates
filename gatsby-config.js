@@ -5,6 +5,14 @@
  */
 
 module.exports = {
+  plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-156283815-1",
+      },
+    },
+  ],
   siteMetadata: {
     title: "James F. Kimmel & Associates, Inc.",
     description:
