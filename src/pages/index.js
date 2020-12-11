@@ -155,3 +155,9 @@ export default class Home extends React.Component {
     )
   }
 }
+
+/*
+ ** To deploy to cloudflare from command line:
+ ** gatsby build
+ ** wrangler publish
+ */

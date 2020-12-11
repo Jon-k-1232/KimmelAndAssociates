@@ -79,7 +79,7 @@ export default class About extends React.Component {
                   className="employeeFourImage"
                 />
                 <h3>Jaclyn Kimmel-Cano</h3>
-                <p>SENIOR MARKETING MANAGER</p>
+                <p>MARKETING</p>
               </div>
 
               <div className="employeeFive">
@@ -99,7 +99,7 @@ export default class About extends React.Component {
                   className="employeeSixImage"
                 />
                 <h3>Marsha Johnson</h3>
-                <p>CPA</p>
+                <p>ACCOUNTING MANAGER</p>
               </div>
             </div>
           </div>

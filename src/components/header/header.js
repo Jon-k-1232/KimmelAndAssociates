@@ -39,7 +39,7 @@ export default class Header extends React.Component {
               onClick={() => this.setState({ menuDisplay: false })}
             >
               <li id="about">
-                <Link to="/about">ABOUT</Link>
+                <Link to="/about">TEAM</Link>
               </li>
               <li id="culture">
                 <Link to="/culture">CULTURE</Link>
