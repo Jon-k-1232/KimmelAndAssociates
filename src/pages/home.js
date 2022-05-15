@@ -23,8 +23,8 @@ export default function Home() {
           <div className="mainQoute">
             <h2>Expert Accounting and Tax Service</h2>
             <p id="qouteHead">
-              Top Rated tax specialist with over <br />
-              40 Years of Experience
+              Top rated tax specialist with over <br />
+              40 years of experience
             </p>
           </div>
 
