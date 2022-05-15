@@ -14,9 +14,11 @@ export default function ServiceItem({
       <img src={image} alt={imageAlt} id="serviceItemImage" />
       <h2 id="serviceItemLabel">{label}</h2>
       <p id="labelDetail">{labelDetail}</p>
-      <p id="learnMore">
-        <Link to={link}>Learn More</Link>
-      </p>
+      {link && (
+        <p id="learnMore">
+          <Link to={link}>Learn More</Link>
+        </p>
+      )}
     </div>
   )
 }
