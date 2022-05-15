@@ -106,29 +106,11 @@ body {
   color: #fff;
 }
 
-.teamMembers div img {
-  width: 300px;
-}
-
-.teamMembers div {
+.teamMembers {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 40px 0px 40px 0px;
-}
-
-.teamMembers div h3 {
-  margin: 11px;
-  font-weight: 500;
-  font-size: 24px;
-}
-
-.teamMembers div p {
-  font-weight: 600;
-  color: #cda577;
-  font-size: 13px;
-  margin: 0;
+  justify-content: space-around;
+  flex-flow: wrap;
+  padding: 20px;
 }
 
 /****************\\\\\\\\\ Culture Page Mobile /////////****************/
@@ -258,12 +240,6 @@ body {
 
   .topWordsConnect h4 {
     font-size: 20px;
-  }
-
-  /****************\\\\\\\\\ About Page Tablet /////////****************/
-
-  .teamMembers div img {
-    width: 400px;
   }
 
   /****************\\\\\\\\\ Culture Page Tablet /////////****************/

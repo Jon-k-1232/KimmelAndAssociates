@@ -27,34 +27,40 @@ export default function Connect() {
           </div>
 
           <div className="connectAddress">
-            <div>
-              <p>Address:</p>
+            <div style={style.typeGroup}>
+              <div style={style.type}>
+                <p>Address:</p>
+              </div>
+              <div>
+                <p>
+                  16421 N. Tatum Blvd Suite 120
+                  <br /> Phoenix, AZ 85032
+                </p>
+              </div>
             </div>
-            <div>
-              <p>
-                16421 N. Tatum Blvd Suite 120
-                <br /> Phoenix, AZ 85032
-              </p>
+            <div style={style.typeGroup}>
+              <div style={style.type}>
+                <p>Phone:</p>
+              </div>
+              <div>
+                <p>(602)788-0903</p>
+              </div>
             </div>
-            <div>
-              <p>Phone:</p>
-            </div>
-            <div>
-              <p>(602)788-0903</p>
-            </div>
-            <div>
-              <p>Email:</p>
-            </div>
-            <div>
-              <p>
-                <a
-                  id="emailLink"
-                  href="mailto:aspire@jimkimmel.com?"
-                  rel="EMAIL"
-                >
-                  Aspire@JimKimmel.com
-                </a>
-              </p>
+            <div style={style.typeGroup}>
+              <div style={style.type}>
+                <p>Email:</p>
+              </div>
+              <div>
+                <p>
+                  <a
+                    id="emailLink"
+                    href="mailto:aspire@jimkimmel.com?"
+                    rel="EMAIL"
+                  >
+                    Aspire@JimKimmel.com
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -62,4 +68,13 @@ export default function Connect() {
       <Footer />
     </div>
   )
+}
+
+const style = {
+  typeGroup: {
+    display: "flex",
+  },
+  type: {
+    width: "6em",
+  },
 }

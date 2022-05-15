@@ -1,4 +1,5 @@
 import React from "react"
+import "./Employee.css"
 
 export default function Employee({ image, imageAlt, name, position }) {
   return (

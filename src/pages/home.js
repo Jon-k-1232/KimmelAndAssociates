@@ -88,7 +88,7 @@ const serviceItems = [
     imageAlt: "A family at a travel destination.",
     label: "Multi-State Tax Preparation",
     labelDetail:
-      "Whether you own a business, a vacation home, or are a US citizen abroad, we have you covered.",
+      "Whether you own a business, a vacation home, or are a US citizen abroad; we have you covered.",
     link: "/about",
   },
   {
