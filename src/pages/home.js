@@ -5,8 +5,8 @@ import Header from "../components/header/header.js"
 import Seo from "../components/seo/seo"
 import mainHome from "../images/mainHome.jpg"
 import table from "../images/table.jpg"
-import Pier from "../images/Pier.jpg"
 import TopView from "../components/topView/topView"
+import ServiceItem from "../components/serviceItem/serviceItem"
 
 export default function Home() {
   return (
@@ -20,53 +20,24 @@ export default function Home() {
       />
       <div className="mainBottom">
         <main className="contentContainer">
-          <blockquote className="mainQoute">
-            <h2>We Assist You</h2>
+          <div className="mainQoute">
+            <h2>Expert Accounting and Tax Service</h2>
             <p id="qouteHead">
-              in Saving and Accumulating Money on a Tax-Deferred Basis
+              Top Rated tax specialist with over <br />
+              40 Years of Experience
             </p>
-          </blockquote>
-
-          <div className="middleBoxHome">
-            <div className="partnerSection">
-              <div className="partnerAlign">
-                <img
-                  src={table}
-                  alt="Planning outcomes together."
-                  className="partnerImageMain"
-                />
-              </div>
-              <div className="partnerText">
-                <h3 id="partnerHeader">Partnering with You</h3>
-                <h4 id="partnerDetails">
-                  RELATIONSHIPS BUILT ON <br />
-                  TRUST, COMPETENT ADVICE, <br />
-                  COMMUNICATION, AND SERVICE.
-                </h4>
-              </div>
-            </div>
           </div>
 
-          <div className="endBoxHome">
-            <div className="visionSection">
-              <div className="visionAlign">
-                <img
-                  src={Pier}
-                  alt="Clear Vision"
-                  className="visionImageMain"
-                />
-              </div>
-              <div className="visionText">
-                <h3 id="visionHeader">Guidance & Vision</h3>
-                <h4 id="visionDetails">
-                  ACCOUNTING STRATEGIES BASED ON
-                  <br />
-                  OVER 35 YEARS OF TAX
-                  <br />
-                  KNOWLEDGE AND EXPERIENCE.
-                </h4>
-              </div>
-            </div>
+          <div className="serviceItemWrapper">
+            {serviceItems.map(item => (
+              <ServiceItem
+                image={item.image}
+                imageAlt={item.imageAlt}
+                label={item.label}
+                labelDetail={item.labelDetail}
+                link={item.link}
+              />
+            ))}
           </div>
         </main>
       </div>
@@ -74,6 +45,56 @@ export default function Home() {
     </div>
   )
 }
+
+const serviceItems = [
+  {
+    image: table,
+    imageAlt: "Planning outcomes together.",
+    label: "Taxes",
+    labelDetail:
+      "Licensed enrolled agent for all 50 states. Specializing in individual, s-corp, llc, c-corp,non-profit, and fiduciary return.",
+    link: "/about",
+  },
+  {
+    image: table,
+    imageAlt: "Planning outcomes together.",
+    label: "IRS Notices",
+    labelDetail: "Receive an IRS notice and have questions? We can help!",
+    link: "/about",
+  },
+  {
+    image: table,
+    imageAlt: "Planning outcomes together.",
+    label: "Bookkeeping",
+    labelDetail:
+      "Quickbooks, financial statements, bank financial statements, and mortgage financial statements.",
+    link: "/about",
+  },
+  {
+    image: table,
+    imageAlt: "Planning outcomes together.",
+    label: "Trust and Estate Tax Planning",
+    labelDetail:
+      "Whether its your estate or a loved one's, we have your best interests in mind.",
+    link: "/about",
+  },
+  {
+    image: table,
+    imageAlt: "Planning outcomes together.",
+    label: "Multi-State Tax Preparation",
+    labelDetail:
+      "Whether you own a business, a vacation home, or are a US citizen abroad, we have you covered.",
+    link: "/about",
+  },
+  {
+    image: table,
+    imageAlt: "Planning outcomes together.",
+    label: "EIN & Business Planning",
+    labelDetail:
+      "Not only can we help obtain an employer identification number, but we can also help setup your business for success.",
+    link: "/about",
+  },
+]
 
 /*
  ** To deploy to cloudflare from command line:

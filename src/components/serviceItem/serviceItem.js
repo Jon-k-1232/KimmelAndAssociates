@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import "./ServiceItem.css"
 
 export default function ServiceItem({
   image,
@@ -11,9 +12,9 @@ export default function ServiceItem({
   return (
     <div className="serviceContainer">
       <img src={image} alt={imageAlt} id="serviceItemImage" />
-      <h3>{label}</h3>
-      <p>{labelDetail}</p>
-      <p>
+      <h2 id="serviceItemLabel">{label}</h2>
+      <p id="labelDetail">{labelDetail}</p>
+      <p id="learnMore">
         <Link to={link}>Learn More</Link>
       </p>
     </div>

@@ -1,0 +1,19 @@
+#serviceItemImage,
+.serviceContainer {
+  width: 20em;
+}
+
+.serviceContainer {
+  padding: 1em;
+}
+
+#serviceItemLabel,
+#learnMore,
+#labelDetail {
+  text-align: center;
+}
+
+#learnMore a {
+  font-weight: 600;
+  color: #cda577;
+}
