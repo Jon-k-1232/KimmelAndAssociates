@@ -35,7 +35,7 @@ export default function Home() {
                 imageAlt={item.imageAlt}
                 label={item.label}
                 labelDetail={item.labelDetail}
-                link={item.link}
+                // link={item.link}
               />
             ))}
           </div>
