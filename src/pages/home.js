@@ -4,6 +4,11 @@ import Footer from "../components/footer/footer.js"
 import Header from "../components/header/header.js"
 import Seo from "../components/seo/seo"
 import mainHome from "../images/mainHome.jpg"
+import bookkeeping from "../images/bookkeeping.jpeg"
+import business from "../images/business.jpeg"
+import irs from "../images/irs.jpeg"
+import multi_state from "../images/multi_state.jpeg"
+import trust from "../images/trust.jpeg"
 import table from "../images/table.jpg"
 import TopView from "../components/topView/topView"
 import ServiceItem from "../components/serviceItem/serviceItem"
@@ -56,39 +61,40 @@ const serviceItems = [
     link: "/about",
   },
   {
-    image: table,
-    imageAlt: "Planning outcomes together.",
+    image: irs,
+    imageAlt: "A picture of the IRS building with words IRS on building.",
     label: "IRS Notices",
     labelDetail: "Receive an IRS notice and have questions? We can help!",
     link: "/about",
   },
   {
-    image: table,
-    imageAlt: "Planning outcomes together.",
+    image: bookkeeping,
+    imageAlt: "A stack of binders containing invoices, and receipts.",
     label: "Bookkeeping",
     labelDetail:
       "Quickbooks, financial statements, bank financial statements, and mortgage financial statements.",
     link: "/about",
   },
   {
-    image: table,
-    imageAlt: "Planning outcomes together.",
+    image: trust,
+    imageAlt: "A piece of paper with trust written on it.",
     label: "Trust and Estate Tax Planning",
     labelDetail:
       "Whether its your estate or a loved one's, we have your best interests in mind.",
     link: "/about",
   },
   {
-    image: table,
-    imageAlt: "Planning outcomes together.",
+    image: multi_state,
+    imageAlt: "A family at a travel destination.",
     label: "Multi-State Tax Preparation",
     labelDetail:
       "Whether you own a business, a vacation home, or are a US citizen abroad, we have you covered.",
     link: "/about",
   },
   {
-    image: table,
-    imageAlt: "Planning outcomes together.",
+    image: business,
+    imageAlt:
+      "A piece of paper with a pie chart and people around it planning.",
     label: "EIN & Business Planning",
     labelDetail:
       "Not only can we help obtain an employer identification number, but we can also help setup your business for success.",

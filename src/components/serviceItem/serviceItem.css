@@ -1,9 +1,10 @@
-#serviceItemImage,
-.serviceContainer {
+#serviceItemImage {
   width: 20em;
+  height: 220px;
 }
 
 .serviceContainer {
+  width: 20em;
   padding: 1em;
 }
 
