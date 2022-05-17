@@ -34,12 +34,13 @@ export default function Home() {
           </div>
 
           <div className="serviceItemWrapper">
-            {serviceItems.map(item => (
+            {serviceItems.map((item, key) => (
               <ServiceItem
                 image={item.image}
                 imageAlt={item.imageAlt}
                 label={item.label}
                 labelDetail={item.labelDetail}
+                key={key}
                 // link={item.link}
               />
             ))}
@@ -57,7 +58,7 @@ const serviceItems = [
     imageAlt: "Planning outcomes together.",
     label: "Taxes",
     labelDetail:
-      "Licensed enrolled agent for all 50 states. Specializing in individual, s-corp, llc, c-corp,non-profit, and fiduciary return.",
+      "Licensed enrolled agent for all 50 states. Specializing in individual, s-corp, llc, c-corp,non-profit, and fiduciary returns.",
     link: "/about",
   },
   {

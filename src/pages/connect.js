@@ -11,6 +11,7 @@ export default function Connect() {
       <div className="connectWrapper">
         <TopView
           image={beachFam}
+          imageClass="connectTopImage"
           imageAlt="Family in at beach with sunset"
           SayingLineOne="LEARN HOW WE CAN HELP"
           SayingLineTwo="Connect With Us"

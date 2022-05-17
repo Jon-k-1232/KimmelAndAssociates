@@ -3,6 +3,7 @@ import Carrot from "../carrot/carrot"
 
 export default function TopView({
   image,
+  imageClass,
   imageAlt,
   SayingLineOne,
   SayingLineTwo,
@@ -11,7 +12,11 @@ export default function TopView({
 }) {
   return (
     <div className="mainTop">
-      <img src={image} alt={imageAlt} className="mainHomeImage" />
+      <img
+        src={image}
+        alt={imageAlt}
+        className={imageClass ? imageClass : "mainHomeImage"}
+      />
       {!SayingLineTwo && !typography && (
         <h1 id="mainHomeTopText">{SayingLineOne}</h1>
       )}

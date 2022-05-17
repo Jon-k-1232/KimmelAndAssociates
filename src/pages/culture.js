@@ -10,9 +10,10 @@ export default function Culture() {
       <Header />
       <TopView
         image={canyon}
+        imageClass="aboutCanyonImage"
         imageAlt="Looking up from narrow canyon."
-        SayingLineOne="We serve as your financial compass helping customize a plan to fit
-              your goals"
+        SayingLineOne="We serve as your financial compass"
+        SayingLineTwo="Helping customize a plan to fit your goals"
       />
       <div className="lowerCulture">
         <div className="lowerText">

@@ -24,12 +24,13 @@ export default function About() {
 
         <div className="lowerAbout">
           <div className="teamMembers">
-            {employeeList.map(employ => (
+            {employeeList.map((employ, key) => (
               <Employee
                 image={employ.image}
                 imageAlt={employ.imageAlt}
                 name={employ.name}
                 position={employ.position}
+                key={key}
               />
             ))}
           </div>
@@ -58,12 +59,6 @@ const employeeList = [
     position: "ADMINISTRATION",
     image: cacti,
     imageAlt: "Saguaro cactus at night",
-  },
-  {
-    name: "Jaimee Kimmel-Trujillo",
-    position: "Billing",
-    image: starWars,
-    imageAlt: "starTroopers",
   },
   {
     name: "Marsha Johnson",
