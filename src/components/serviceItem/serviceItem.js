@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import "./ServiceItem.css"
+import "./serviceItem.css"
 
 export default function ServiceItem({
   image,
